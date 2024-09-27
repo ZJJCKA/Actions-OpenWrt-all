@@ -24,5 +24,5 @@ git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
 ./scripts/feeds install -a 
 git clone https://github.com/Siriling/5G-Modem-Support.git feeds/packages/5G-Modem-Support
 git clone https://github.com/vernesong/OpenClash.git feeds/packages/OpenClash
-git clone https://github.com/sirpdboy/netspeedtest.git feeds/packages/netspeedtest
-sed -i '3i echo 60 > /sys/class/hwmon/hwmon1/pwm1' package/base-files/files/etc/rc.local
+#git clone https://github.com/sirpdboy/netspeedtest.git feeds/packages/netspeedtest
+sed -i '3i echo 50 > /sys/class/hwmon/hwmon1/pwm1' package/base-files/files/etc/rc.local
