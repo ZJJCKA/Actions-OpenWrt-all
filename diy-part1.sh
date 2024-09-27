@@ -17,13 +17,15 @@
 sed -i '1i src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '2i src-git small https://github.com/kenzok8/small' feeds.conf.default
 sed -i '3i src-git-full hellworld https://github.com/fw876/helloworld.git' feeds.conf.default
+sed -i '4i src-git-full modem https://github.com/Siriling/5G-Modem-Support.git' feeds.conf.default
+sed -i '5i src-git-full clash https://github.com/vernesong/OpenClash.git' feeds.conf.default
+sed -i '6i src-git-full passwall https://github.com/xiaorouji/openwrt-passwall-packages.git' feeds.conf.default
 ./scripts/feeds update -a && rm -rf feeds/luci/applications/luci-app-mosdns
 rm -rf feeds/packages/net/{alist,adguardhome,mosdns,xray*,v2ray*,v2ray*,sing*,smartdns}
 rm -rf feeds/packages/utils/v2dat
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
 ./scripts/feeds install -a 
-git clone https://github.com/Siriling/5G-Modem-Support.git feeds/packages/5G-Modem-Support
 git clone https://github.com/vernesong/OpenClash.git feeds/packages/OpenClash
 git clone https://github.com/xiaorouji/openwrt-passwall.git feeds/packages/openwrt-passwall
 git clone https://github.com/sirpdboy/luci-app-netdata.git feeds/packages/luci-app-netdata
