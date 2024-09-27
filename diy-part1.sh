@@ -28,4 +28,4 @@ git clone https://github.com/vernesong/OpenClash.git feeds/packages/OpenClash
 git clone https://github.com/xiaorouji/openwrt-passwall.git feeds/packages/openwrt-passwall
 git clone https://github.com/sirpdboy/luci-app-netdata.git feeds/packages/luci-app-netdata
 sed -i '3i echo 50 > /sys/class/hwmon/hwmon1/pwm1' package/base-files/files/etc/rc.local
-sed -i 's/192.168.1.1/192.168.66.1/g' package/base-files/files/bin/config_generate
+
