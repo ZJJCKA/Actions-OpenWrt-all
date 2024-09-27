@@ -26,8 +26,5 @@ rm -rf feeds/packages/utils/v2dat
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
 ./scripts/feeds install -a 
-git clone https://github.com/vernesong/OpenClash.git feeds/packages/OpenClash
-git clone https://github.com/xiaorouji/openwrt-passwall.git feeds/packages/openwrt-passwall
-git clone https://github.com/sirpdboy/luci-app-netdata.git feeds/packages/luci-app-netdata
 sed -i '3i echo 50 > /sys/class/hwmon/hwmon1/pwm1' package/base-files/files/etc/rc.local
 
