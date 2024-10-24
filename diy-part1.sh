@@ -25,5 +25,4 @@ git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
 git clone https://github.com/ZJJCKA/5G-Modem-Support.git feeds/packages/5G-Modem-Support
 git clone https://github.com/sirpdboy/netspeedtest.git feeds/packages/netspeedtest
 git clone https://github.com/gaoyaxuan/luci-app-pushbot.git package/luci-app-pushbot
-
 sed -i '3i echo 60 > /sys/class/hwmon/hwmon1/pwm1' package/base-files/files/etc/rc.local
